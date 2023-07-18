@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<!-- <link rel="profile" href="http://gmpg.org/xfn/11" /> -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -11,8 +11,8 @@
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<!--videos-->
-	<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
+	<script src="./js/index.js"></script>
+
 
 </head>
 
@@ -184,20 +184,16 @@
 	<div class="div-noticias">
 		<section class="content__section">
 			<div class="playlist__one">
-				 <div class="videos">
+				<div class="videos">
 					<div class="video" style="background-image: url(img/plan-de-regreso.jpg)">
-						<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/ivJ0DII3jPo"
-							data-gall="myGallery"><i class="fa fa-caret-right"></i></a>
+						<a href="https://youtu.be/ivJ0DII3jPo" target="_blank"><i class="fa fa-caret-right"></i></a>
 					</div>
 					<div class="video" style="background-image: url(img/seguimiento-casa.jpg)">
-						<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/UfK5Y14dI9U"
-							data-gall="myGallery"><i class="fa fa-caret-right"></i></a>
+						<a href="https://youtu.be/UfK5Y14dI9U" target="_blank"><i class="fa fa-caret-right"></i></a>
 					</div>
 					<div class="video" style="background-image: url(img/coronavirus.jpg)">
-						<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/zHDgr2kzqtA"
-							data-gall="myGallery"><i class="fa fa-caret-right"></i></a>
+						<a href="https://youtu.be/zHDgr2kzqtA" target="_blank"><i class="fa fa-caret-right"></i></a>
 					</div>
-
 				</div>
 			</div>
 		</section>
@@ -206,14 +202,14 @@
 	<!-- CORREO Y CURSOS-->
 	<div class="container cursos-correos">
 		<div class="col-md-6">
-			<img src="img/correo_institucional.jpg" alt="" class="img-correo">
-				<a target="_blank" href="http://correosinstitucionales.cete.online/">
-				</a>
+			<a target="_blank" href="http://correosinstitucionales.cete.online/">
+				<img src="img/correo_institucional.jpg" alt="" class="img-correo">
+			</a>
 		</div>
 		<div class="col-md-6">
-			<img src="img/cursos_online.jpg" alt="" class="img-cursos">
-				<a target="_blank" href="http://setcapacitacion.tamaulipas.gob.mx/index.html">
-				</a>
+			<a target="_blank" href="http://setcapacitacion.tamaulipas.gob.mx/index.html">
+				<img src="img/cursos_online.jpg" alt="" class="img-cursos">
+			</a>
 		</div>
 	</div>
 
@@ -662,30 +658,6 @@
 		</div>
 		<!-- /Liston inferior -->
 		<script src="https://use.fontawesome.com/f66bf0287f.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script type="text/javascript" src="venobox/venobox.min.js"></script>
-		<script>
-			$(document).ready(function () {
-				$('.venobox').venobox({
-					closeColor: '#f4f4f4',
-					spinColor: '#f4f4f4',
-					arrowsColor: '#f4f4f4',
-					closeBackground: '#17191D',
-					overlayColor: 'rgba(23,25,29,0.8)'
-				});
-			});
-
-			const formListener = () => {
-				const peticionForm = document.getElementById('peticion-form')
-				peticionForm.onsubmit = (e) => {
-					e.preventDefault()
-					alert('¡Gracias por tus comentarios!')
-					peticionForm.reset()
-				}
-			}
-			formListener()
-
-		</script>
 
 </body>
 </html>
